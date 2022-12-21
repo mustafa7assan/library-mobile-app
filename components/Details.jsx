@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Image, useColorScheme } from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 const Details = ({ navigation, route }) => {
   const book = route.params.book;
   return (
@@ -32,6 +32,16 @@ const Details = ({ navigation, route }) => {
             <Text style={styles.minInfo}>{book.language}</Text>
             <Text style={{ color: "#fff" }}>language</Text>
           </View>
+        </View>
+        <View style={styles.bookDesc}>
+          <Text style={styles.desTitle}>Description</Text>
+          <ScrollView>
+            <Text style={styles.description}>
+              {book.description} Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Maiores eaque enim fugit culpa reiciendis nobis
+              vitae aliquid debitis, consequatur numquam.
+            </Text>
+          </ScrollView>
         </View>
       </View>
     </View>
@@ -94,6 +104,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     flexDirection: "row",
     justifyContent: "space-between",
+    marginBottom: 0,
   },
   info: {
     alignItems: "center",
@@ -108,6 +119,21 @@ const styles = StyleSheet.create({
     width: 2,
     height: "100%",
     backgroundColor: "#fff",
+  },
+  bookDesc: {
+    backgroundColor: "#eee",
+    marginTop: 10,
+    padding: 10,
+    borderRadius: 10,
+    flex: 1,
+  },
+  desTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginVertical: 5,
+  },
+  description: {
+    textAlign: "justify",
   },
 });
 export default Details;
