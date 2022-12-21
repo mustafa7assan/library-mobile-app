@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
-
+import { View, Text, StyleSheet, Image, useColorScheme } from "react-native";
 const Details = ({ navigation, route }) => {
   const book = route.params.book;
   return (
@@ -17,6 +16,22 @@ const Details = ({ navigation, route }) => {
           <Text style={styles.priceBox}>
             $<Text style={styles.price}>{book.price}</Text>
           </Text>
+        </View>
+        <View style={styles.bookInfo}>
+          <View style={styles.info}>
+            <Text style={styles.minInfo}>{book.pages}</Text>
+            <Text style={{ color: "#fff" }}>Pages</Text>
+          </View>
+          <View style={styles.divider}></View>
+          <View style={styles.info}>
+            <Text style={styles.minInfo}>{book.published}</Text>
+            <Text style={{ color: "#fff" }}>Published</Text>
+          </View>
+          <View style={styles.divider}></View>
+          <View style={styles.info}>
+            <Text style={styles.minInfo}>{book.language}</Text>
+            <Text style={{ color: "#fff" }}>language</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -71,6 +86,28 @@ const styles = StyleSheet.create({
   author: {
     fontWeight: "600",
     color: "gray",
+  },
+  bookInfo: {
+    backgroundColor: "#0ea5e9",
+    padding: 15,
+    marginVertical: 10,
+    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  info: {
+    alignItems: "center",
+    color: "#fff",
+  },
+  minInfo: {
+    marginBottom: 5,
+    fontWeight: "700",
+    color: "#fff",
+  },
+  divider: {
+    width: 2,
+    height: "100%",
+    backgroundColor: "#fff",
   },
 });
 export default Details;
