@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
   author: {
     fontSize: 14,
     fontWeight: "700",
+    color: "#374151",
   },
   description: {
     fontSize: 10,
