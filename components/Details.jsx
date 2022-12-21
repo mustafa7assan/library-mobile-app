@@ -51,7 +51,7 @@ const Details = ({ navigation, route }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0ea5e9",
+    backgroundColor: "#171717",
     paddingBottom: 0,
   },
   bookImg: {
@@ -84,21 +84,21 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   priceBox: {
-    color: "#0ea5e9",
+    color: "#f97316",
     flex: 1,
     textAlign: "right",
   },
   price: {
     fontSize: 28,
     fontWeight: "700",
-    color: "#0ea5e9",
+    color: "#f97316",
   },
   author: {
     fontWeight: "600",
     color: "gray",
   },
   bookInfo: {
-    backgroundColor: "#0ea5e9",
+    backgroundColor: "#171717",
     padding: 15,
     marginVertical: 10,
     borderRadius: 10,
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   bookDesc: {
-    backgroundColor: "#eee",
+    backgroundColor: "#171717",
     marginTop: 10,
     padding: 10,
     borderRadius: 10,
@@ -130,10 +130,12 @@ const styles = StyleSheet.create({
   desTitle: {
     fontSize: 18,
     fontWeight: "700",
+    color: "#eee",
     marginVertical: 5,
   },
   description: {
     textAlign: "justify",
+    color: "#eee",
   },
 });
 export default Details;

@@ -16,7 +16,7 @@ export default function App() {
           options={{
             title: "Library",
             headerStyle: {
-              backgroundColor: "#0ea5e9",
+              backgroundColor: "#171717",
               textAlgin: "center",
             },
             headerTitleAlign: "center",
@@ -32,7 +32,7 @@ export default function App() {
           options={{
             title: "Details",
             headerStyle: {
-              backgroundColor: "#0ea5e9",
+              backgroundColor: "#171717",
             },
             headerShadowVisible: false, // applied here
             headerTitleAlign: "center",

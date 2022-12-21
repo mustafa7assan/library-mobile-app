@@ -103,6 +103,17 @@ const books = [
       "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people.",
   },
   {
+    title: "Friends, Lovers, and the Big Terrible Thing",
+    author: "Matthew Perry ",
+    cover: require("../assets/img/cover-9.jpg"),
+    pages: 272,
+    published: 2022,
+    language: "English",
+    price: 13.67,
+    description:
+      "So begins the riveting story of acclaimed actor Matthew Perry, taking us along on his journey from childhood ambition to fame to addiction and recovery in the aftermath of a life-threatening health scare. Before the frequent hospital visits and stints in rehab, there was five-year-old Matthew, who traveled from Montreal to Los Angeles, shuffling between his separated parents; fourteen-year-old Matthew, who was a nationally ranked tennis star in Canada; twenty-four-year-old Matthew, who nabbed a coveted role as a lead cast member on the talked-about pilot then called Friends Like Us. . . and so much more.",
+  },
+  {
     title: "Steve Job",
     author: "Walter Isaacson",
     cover: require("../assets/img/cover-5.jpg"),
@@ -113,6 +124,51 @@ const books = [
     description:
       "Based on more than forty interviews with Steve Jobs conducted over two years—as well as interviews with more than 100 family members, friends, adversaries, competitors, and colleagues—Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson’s portrait touched millions of readers.    ",
   },
-];
 
+  {
+    title: "The Storyteller",
+    author: "Dave Groh",
+    cover: require("../assets/img/cover-10.jpg"),
+    pages: 384,
+    published: 2021,
+    language: "English",
+    price: 9.74,
+    description:
+      "So, I've written a book Having entertained the idea for years, and even offered a few questionable opportunities (It's a piece of cake! Just do 4 hours of interviews, find someone else to write it, put your face on the cover, and voila!) I have decided to write these stories just as I have always done, in my own hand. The joy that I have felt from chronicling these tales is not unlike listening back to a song that I've recorded and can't wait to share with the world, or reading a primitive journal entry from a stained notebook, or even hearing my voice bounce between the Kiss posters on my wall as a child. ",
+  },
+
+  {
+    title: "And There Was Light",
+    author: "Jon Meacham",
+    cover: require("../assets/img/cover-6.jpg"),
+    pages: 720,
+    published: 2022,
+    language: "English",
+    price: 35.0,
+    description:
+      "A president who governed a divided country has much to teach us in a twenty-first-century moment of polarization and political crisis. Hated and hailed, excoriated and revered, Abraham Lincoln was at the pinnacle of American power when implacable secessionists gave no quarter in a clash of visions bound up with money, race, identity, and faith. In him we can see the possibilities of the presidency as well as its limitations",
+  },
+  {
+    title: "Quiet",
+    author: "Susan Cain",
+    cover: require("../assets/img/cover-7.jpg"),
+    pages: 368,
+    published: 2013,
+    language: "English",
+    price: 13.76,
+    description:
+      "At least one-third of the people we know are introverts. They are the ones who prefer listening to speaking; who innovate and create but dislike self-promotion; who favor working on their own over working in teams. It is to introverts—Rosa Parks, Chopin, Dr. Seuss, Steve Wozniak—that we owe many of the great contributions to society.",
+  },
+  {
+    title: "Sapiens",
+    author: "Yuval Noah",
+    cover: require("../assets/img/cover-8.jpg"),
+    pages: 469,
+    published: 2015,
+    language: "English",
+    price: 21.22,
+    description:
+      "Most books about the history of humanity pursue either a historical or a biological approach, but Dr. Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago with the appearance of modern cognition. From examining the role evolving humans have played in the global ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted narratives, connect past developments with contemporary concerns, and examine specific events within the context of larger ideas.",
+  },
+];
 export default HomeScreen;
