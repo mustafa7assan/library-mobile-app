@@ -19,7 +19,7 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
         {books.map((book, index) => {
           return <Card key={index} book={book} navigation={navigation}></Card>;
-        })}
+        })}Card
       </ScrollView>
     </View>
   );
