@@ -37,9 +37,7 @@ const Details = ({ navigation, route }) => {
           <Text style={styles.desTitle}>Description</Text>
           <ScrollView>
             <Text style={styles.description}>
-              {book.description} Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Maiores eaque enim fugit culpa reiciendis nobis
-              vitae aliquid debitis, consequatur numquam.
+              {book.description} 
             </Text>
           </ScrollView>
         </View>
@@ -47,6 +45,14 @@ const Details = ({ navigation, route }) => {
     </View>
   );
 };
+
+
+
+
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {

@@ -19,11 +19,13 @@ const HomeScreen = ({ navigation }) => {
       <ScrollView style={styles.scroll} showsVerticalScrollIndicator={false}>
         {books.map((book, index) => {
           return <Card key={index} book={book} navigation={navigation}></Card>;
-        })}Card
+        })}
+        Card
       </ScrollView>
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -80,6 +82,7 @@ const books = [
     description:
       "There may be no tidy solutions or pithy answers to life's big challenges, but Michelle Obama believes that we can all locate and lean on a set of tools to help us better navigate change and remain steady within flux. In The Light We Carry, she opens a frank and honest dialogue with readers, considering the questions many of us wrestle with: How do we build enduring and honest relationships? How can we discover strength and community inside our differences? What tools do we use to address feelings of self-doubt or helplessness? What do we do when it all starts to feel like too much?",
   },
+
   {
     title: "Finding Me",
     author: "Viola Davis",
